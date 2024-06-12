@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [ljmanayon/product-preview-card](https://github.com/ljmanayon/product-preview-card)
-- Live Site URL: []()
+- Live Site URL: [github.io/product-preview-card/](https://ljmanayon.github.io/product-preview-card/)
 
 ## My process
 
