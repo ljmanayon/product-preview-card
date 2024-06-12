@@ -1,0 +1,210 @@
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+  font-family: Montserrat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  width: 370px;
+  border-radius: 0.8rem;
+}
+
+picture img {
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.perfume {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+h1 {
+  font-family: Fraunces;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: hsl(212, 21%, 14%);
+}
+
+.description {
+  color: hsl(228, 12%, 48%);
+}
+
+section {
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+h2 {
+  color: hsl(212, 21%, 14%);
+  font-weight: 500;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+.price .price-dis {
+  font-family: Fraunces;
+  font-size: 2rem;
+  margin-top: 0.2rem;
+  padding-right: 1.5rem;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+}
+.price .price-orig {
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: hsl(158, 36%, 37%);
+  width: 90%;
+  color: hsl(0, 0%, 100%);
+  padding: 16px;
+  border: none;
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin: 0px auto 0px;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: rgb(17, 47, 17);
+  cursor: pointer;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+}
+footer .attribution {
+  font-size: 6px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 48rem) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 580px;
+  }
+  picture img {
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    border-top-right-radius: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */

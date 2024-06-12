@@ -1,0 +1,17 @@
+@function color($key) {
+  @if map-has-key($map: $colors, $key: $key) {
+    @return map-get($map: $colors, $key: $key);
+  }
+
+  @warn "Unknown '#{$key}' in $colors.";
+  @return null;
+}
+
+@function font($key) {
+  @if map-has-key($map: $fonts, $key: $key) {
+    @return map-get($map: $fonts, $key: $key);
+  }
+
+  @warn "Unknown '#{$key}' in $fonts.";
+  @return null;
+}

@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap");
+
+$fonts: (
+  "title-font-fam": Fraunces,
+  "p-font-size": 14px,
+  "base-font-fam": Montserrat,
+  "bold-font-weight": 700,
+  "price-font-size": 2rem,
+);
