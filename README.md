@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [ljmanayon/product-preview-card](https://github.com/ljmanayon/product-preview-card)
 - Live Site URL: []()
 
 ## My process
